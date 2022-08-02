@@ -24,6 +24,8 @@ pip installl -r requirements.txt
 3. Download the *Omiglot* dataset.
 
 ```shell
+mkdir data
+cd data
 wget https://github.com/Runist/MAML-keras/releases/download/v1.0/Omniglot.tar
 tar -xvf Omniglot.tar
 ```
