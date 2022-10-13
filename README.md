@@ -18,7 +18,7 @@ git clone https://github.com/Runist/torch_maml.git
 
 ```shell
 cd torch_maml
-pip installl -r requirements.txt
+pip install -r requirements.txt
 ```
 
 3. Download the *Omiglot* dataset.
