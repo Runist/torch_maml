@@ -1,4 +1,4 @@
-# Pyorch- MAML
+# Pyorch - MAML
 
 ## Part 1. Introduction
 
