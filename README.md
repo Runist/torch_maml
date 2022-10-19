@@ -6,6 +6,8 @@ As we all know, deep learning need vast data. If you don't have this condition, 
 
 Yes, this is "Model-Agnostic Meta-Learning". The biggest difference between MAML and pre-training weights：Pre-training weights minimize only for original task loss. MAML can minimize all task loss with a few steps of training.
 
+If this works for you, please give me a star, this is very important to me.😊
+
 ## Part 2. Quick  Start
 
 1. Pull repository.
