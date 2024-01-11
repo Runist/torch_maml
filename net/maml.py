@@ -102,8 +102,8 @@ def maml_train(model, support_images, support_labels, query_images, query_labels
             support_logit = model.functional_forward(support_image, fast_weights)
             support_loss = nn.CrossEntropyLoss().cuda()(support_logit, support_label)
             grads = torch.autograd.grad(support_loss, fast_weights.values(), create_graph=True)
-            fast_weights = collections.OrderedDict((name, param - args.inner_lr * grads)
-                                                   for ((name, param), grads) in zip(fast_weights.items(), grads))
+            fast_weights = collections.OrderedDict((name, param - args.inner_lr * grad)
+                                                   for ((name, param), grad) in zip(fast_weights.items(), grads))
 
         # Use trained weight to get query loss
         query_logit = model.functional_forward(query_image, fast_weights)
